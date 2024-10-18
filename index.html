@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black text-white">
+
+
+    <div class="loading">
+        <div class="sk-circle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+          </div>
+    </div>
+
+    <div class="side-nav-menu  d-flex justify-content-between position-fixed  top-0  bottom-0">
+
+<div class="menuLinks bg-black text-white ">
+
+<div class="d-flex flex-column justify-content-between h-100 position-relative">
+    <div class="linksUl1">
+        <ul class="m-0 p-0 linksUl2">
+            <li class="list-unstyled m-0 py-2 fs-5" id="Search">Search</li>
+            <li class="list-unstyled m-0 py-2 fs-5" id="Categories">Categories</li>
+            <li class="list-unstyled m-0 py-2 fs-5" id="Area">Area</li>
+            <li class="list-unstyled m-0 py-2 fs-5" id="Ingredients">Ingredients</li>
+            <li class="list-unstyled m-0 py-2 fs-5" id="Contact-Us">Contact Us</li>
+        </ul>
+    </div>
+    <div class="sideBar_footer">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+     <!-- <p class="w-50 bg-danger">Copyright Â© 2019 All Rights
+        Reserved.</p>   -->
+        <br>
+        <span>Copyright Â© 2019 All Rights
+            <br>
+            Reserved.</span>
+    
+    </div>
+</div>
+
+</div> 
+
+<div class="bg-white text-black menuBar  vh-100 d-flex flex-column justify-content-between  align-items-center py-3">
+    <div class="text-center">
+        <img class="w-75" src="images/images1.png" alt="">
+    </div>
+    <div>
+        <i class="fs-1 fa-solid fa-bars getLinks open"></i>
+        <i class="fs-1 fa-solid fa-xmark getLinks close d_none"></i>
+    </div>
+    <div>
+        <i class="fs-5 fa-solid fa-globe"></i>
+        <br>
+        <i class="fs-5 fa-solid fa-share-nodes"></i>
+    </div>
+</div>
+
+    </div>
+
+
+    
+    <div class="container firstSection" >
+        <div class="row my-3 g-3" id="fData">
+        </div>
+
+    </div>
+
+
+
+
+    <div class="firstSectionEx container py-5 d-none ">
+        <div class="row" id="mealExamp">
+
+        </div>
+        </div>
+
+
+<div class="searchSection container  d-none py-4">
+<div class="row position-relative ">
+<div class="col-md-6"><input id="NameSearch" class="form-control bg-transparent" type="text" placeholder="Search By Name"></div>
+<div class="col-md-6"><input id="LetterSearch" class="form-control bg-transparent" type="text" placeholder="Search By First Letter" maxlength="1"></div>
+</div>
+
+<div>
+
+    <div class="loading2 bg-danger">
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+          </div>
+    </div>
+
+
+<div class="row g-3 mt-4" id="SearchData">
+
+</div>
+
+</div>
+</div>
+
+
+<div class="categorySection container d-none">
+    <div class="row g-5 py-3"  id="catNames">
+
+    </div>
+</div>
+
+<div class="catSectionExample d-none container">
+    <div class="row g-5 py-3"  id="catNamesEx">
+
+    </div>
+</div>
+
+
+
+<div class="AreaSection container d-none">
+<div class="row g-4 py-4" id="AreaPlaces">
+
+</div>
+</div>
+
+<div class="countryData container d-none">
+<div class="row g-4" id="countryDataEx">
+
+</div>
+</div>
+
+
+
+<div class="IngredientSeaction container d-none">
+    <div class="row" id="IngredientData">
+
+    </div>
+</div>
+<div class="integratThings container d-none">
+<div class="row g-4 py-3" id="integratThingsData">
+
+</div>
+</div>
+
+
+<div class="contactSection container w-75 py-5 mt-5 d-none">
+
+    <div class="row g-3 mt-5 pt-5">
+        <div class="col-md-6">
+          <input id="uName" type="text" class="form-control" placeholder="Enter Your Name" aria-label="First name">
+          <div class="alert alert-danger p-4 text-center mt-2 d-none" role="alert">
+            Special characters and numbers not allowed
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input id="uEmail" type="email" class="form-control" placeholder="Enter Your Email" aria-label="Last name">
+          <div class="alert alert-danger p-4 text-center mt-2 d-none" role="alert">
+            Email not valid *exemple@yyy.zzz
+          </div>
+        </div>
+      </div>
+      <div class="row g-3 mt-2">
+        <div class="col-md-6">
+          <input id="uTel" type="tel" class="form-control" placeholder="Enter Your Phone" aria-label="First name">
+          <div class="alert alert-danger p-4 text-center mt-2 d-none" role="alert">
+            Enter valid Phone Number
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input onkeypress="validation(this)" id="uNumber" type="number" class="form-control" placeholder="Enter Your Age" aria-label="Last name">
+          <div class="alert alert-danger p-4 text-center mt-2 d-none" role="alert">
+            Enter valid age
+          </div>
+        </div>
+      </div>
+      <div class="row g-3 mt-2">
+        <div class="col-md-6">
+          <input id="userPassword1" type="password" class="form-control" placeholder="Enter Your Password" aria-label="First name">
+          <div class="alert alert-danger p-4 text-center mt-2 d-none" role="alert">
+            Enter valid password *Minimum eight characters, at least one letter and one number:*
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input id="userPassword2" type="password" class="form-control" placeholder="Repassword" aria-label="Last name">
+          <div class="alert alert-danger p-4 text-center mt-2 d-none" role="alert">
+            Enter valid repassword
+          </div>
+        </div>
+      </div>
+
+
+      <div class="text-center mt-4 dubmitDiv">
+<button class="btn btn-outline-danger" disabled>sumbit</button>
+      </div>
+</div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
